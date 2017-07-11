@@ -1,3 +1,15 @@
+h1{
+    text-align: center;
+}
+
+.output{
+    width: 100%;
+    height: auto;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin-bottom: 100px;
+}
 
 #output {
     width: 100%;
@@ -5,9 +17,18 @@
     background-color: black;
     color: white;
     padding: 20px;
+    margin-bottom: 100px;
 }
 
 #jsonOutput {
+    width: 100%;
+    height: auto;
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+#jsonOutput2 {
     width: 100%;
     height: auto;
     background-color: black;
@@ -23,6 +44,6 @@
     margin-bottom: 30px;
 }
 
-#output {
-    margin-bottom: 100px;
+#searchBtn{
+    margin-bottom: 30px;
 }

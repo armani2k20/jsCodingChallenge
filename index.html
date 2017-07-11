@@ -34,9 +34,23 @@
     <h1>Coding Challenge 8 &amp; 9</h1>
 
     <div class="container">
-        <div id="jsonOutput">
-            <h3>Output</h3>
+        <div class="output">
+            <h5>JSON Output</h5>
             <hr>
+            <pre id="jsonOutput"></pre>
+        </div>
+        <br>
+            <div class="row">
+                <div class="input-field col s6">
+                    <input id="searchField" type="text">
+                    <label class="active" for="searchField">Type Here ...</label>
+                </div>
+            </div>
+        <button class="btn" id="searchBtn" onclick="search(kings,house)">Search</button>
+        <div class="output">
+            <h5>JSON Output 2</h5>
+            <hr>
+            <pre id="jsonOutput2"></pre>
         </div>
     </div>
     <hr>
