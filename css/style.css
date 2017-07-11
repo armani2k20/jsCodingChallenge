@@ -1,0 +1,14 @@
+#output{
+    width: 100%;
+    height: auto;
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+#addTxt{
+    margin-bottom: 30px;
+}
+#reset{
+    margin-bottom: 30px;
+}

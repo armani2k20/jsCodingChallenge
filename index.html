@@ -2,17 +2,39 @@
 <html>
 
 <head>
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
-    <title>Javascript Coding Challenge
-        <title>
 </head>
 
 <body>
-    <button class="btn" type="button" onclick="popup()">Click Me!</button>
+    <!--<button class="btn" type="button" onclick="popup()">Click Me!</button>
     <button class="btn" type="button" onclick="ageUp(person)">Age Up!</button>
     <button class="btn" type="button" onclick="ageCheck(person)">Age Check!</button>
+    <hr>-->
+    <!--Coding challenge 7-->
+    <h1>Coding Challenge 7</h1>
+    <div class="container">
+        <button id="addPara" class="btn" onclick="para()">Create Paragraph</button>
+        <form class="col s12">
+            <div class="input-field col s12">
+                <textarea id="textarea1" class="materialize-textarea" disabled></textarea>
+            </div>
+        </form>
+        <button class="btn" id="addTxt" onclick="changeTxt()">Change Text</button>
+        <button class="btn" id="reset" onclick="reset()">reset</button>
+    </div>
+
+    <div class="container">
+        <div id="output">
+            <h3>Output</h3>
+            <hr>
+        </div>
+    </div>
 </body>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
-<script src="./js/core.js"></script>
+<!--<script src="./js/core.js"></script>-->
+<script src="./js/challenge7.js"></script>
 
 </html>
