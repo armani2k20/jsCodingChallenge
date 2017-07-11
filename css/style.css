@@ -1,4 +1,5 @@
-#output{
+
+#output {
     width: 100%;
     height: auto;
     background-color: black;
@@ -6,9 +7,22 @@
     padding: 20px;
 }
 
-#addTxt{
+#jsonOutput {
+    width: 100%;
+    height: auto;
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+#addTxt {
     margin-bottom: 30px;
 }
-#reset{
+
+#reset {
     margin-bottom: 30px;
+}
+
+#output {
+    margin-bottom: 100px;
 }
