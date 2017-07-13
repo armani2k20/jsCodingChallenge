@@ -12,55 +12,108 @@
     <button class="btn" type="button" onclick="ageUp(person)">Age Up!</button>
     <button class="btn" type="button" onclick="ageCheck(person)">Age Check!</button>
     <hr>-->
-    <!--Coding challenge 7-->
-    <h1>Coding Challenge 7</h1>
-    <div class="container">
-        <button id="addPara" class="btn" onclick="para()">Create Paragraph</button>
-        <form class="col s12">
-            <div class="input-field col s12">
-                <textarea id="textarea1" class="materialize-textarea" disabled></textarea>
-            </div>
-        </form>
-        <button class="btn" id="addTxt" onclick="changeTxt()">Change Text</button>
-        <button class="btn" id="reset" onclick="reset()">reset</button>
-    </div>
-
-    <div class="container">
-        <div id="output">
-            <h3>Output</h3>
-            <hr>
+    <main>
+        <!--Coding challenge 7-->
+        <h1>Coding Challenge 7</h1>
+        <div class="container">
+            <button id="addPara" class="btn" onclick="para()">Create Paragraph</button>
+            <form class="col s12">
+                <div class="input-field col s12">
+                    <textarea id="textarea1" class="materialize-textarea" disabled></textarea>
+                </div>
+            </form>
+            <button class="btn" id="addTxt" onclick="changeTxt()">Change Text</button>
+            <button class="btn" id="reset" onclick="reset()">reset</button>
         </div>
-    </div>
 
-    <hr>
-
-    <h1>Coding Challenge 8 &amp; 9</h1>
-    <div class="container">
-        <div class="output">
-            <h5>JSON Output</h5>
-            <hr>
-            <pre id="jsonOutput"></pre>
-        </div>
-        <br>
-        <div class="row">
-            <div class="input-field col s6">
-                <input id="searchField" type="text">
-                <label class="active" for="searchField">Type Here ...</label>
+        <div class="container">
+            <div id="output">
+                <h3>Output</h3>
+                <hr>
             </div>
         </div>
-        <button class="btn" id="searchBtn" onclick="search(kings)">Search</button>
-        <div class="output">
-            <h5>JSON Output 2</h5>
-            <hr>
-            <pre id="jsonOutput2"></pre>
+
+        <hr>
+
+        <h1>Coding Challenge 8 &amp; 9</h1>
+        <div class="container">
+            <div class="output">
+                <h5>JSON Output</h5>
+                <hr>
+                <pre id="jsonOutput"></pre>
+            </div>
+            <br>
+            <div class="row">
+                <div class="input-field col s6">
+                    <input id="searchField" type="text">
+                    <label class="active" for="searchField">Type Here ...</label>
+                </div>
+            </div>
+            <button class="btn" id="searchBtn" onclick="search(kings)">Search</button>
+            <div class="output">
+                <h5>JSON Output 2</h5>
+                <hr>
+                <pre id="jsonOutput2"></pre>
+            </div>
         </div>
-    </div>
-    <hr>
+        <hr>
+        <section>
+            <div class="container">
+                <ul id="tabs-swipe-demo" class="tabs">
+                    <li class="tab col s3"><a href="#test-swipe-1">Add Car</a></li>
+                    <li class="tab col s3"><a href="#test-swipe-2">Garage</a></li>
+                    <li class="tab col s3"><a href="#test-swipe-3">Fixed Cars</a></li>
+                </ul>
+                <div id="test-swipe-1" class="col s12">
+                    <!--add car-->
+                    <div class="row">
+                        <form class="col s12">
+                            <div class="row">
+                                <div class="input-field col s6">
+                                    <input placeholder="Enter License Here" id="license" type="text" class="validate">
+                                </div>
+                                <div class="input-field col s6">
+                                    <input placeholder="Enter Model Here" id="model" type="text" class="validate">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s3">
+                                    <input disabled value="Yes" id="disabled" type="text" class="validate">
+                                    <label for="disabled">Damaged</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <button class="btn" id="btn" onclick="addCars()">Add car</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div id="test-swipe-2" class="col s12">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>License</th>
+                                <th>Model</th>
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+
+                        <tbody id="carDisplay">
+                        </tbody>
+                    </table>
+                </div>
+                <div id="test-swipe-3" class="col s12 green">
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
 <!--<script src="./js/core.js"></script>-->
+<script src="./js/init.js"></script>
+<script src="./js/garage.js"></script>
 <script src="./js/challenge7.js"></script>
 <script src="./js/challenge8.js"></script>
 

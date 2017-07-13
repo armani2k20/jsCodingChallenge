@@ -47,3 +47,33 @@ h1{
 #searchBtn{
     margin-bottom: 30px;
 }
+
+section {
+    margin: 0 auto;
+}
+
+.brand-logo{
+    margin-left: 20px;
+}
+
+#nav-mobile li a{
+    margin-right: 20px;
+}
+
+table{
+    margin: 0 auto;
+    width: 60%;
+}
+
+table tr th{
+        text-align: center;
+}
+
+table tr td{
+        text-align: center;
+}
+
+form{
+    width: 60%;
+}
+
