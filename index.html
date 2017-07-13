@@ -82,10 +82,10 @@
                                     <label for="disabled">Damaged</label>
                                 </div>
                             </div>
-                            <div class="row">
-                                <button class="btn" id="btn" onclick="addCars()">Add car</button>
-                            </div>
                         </form>
+                        <div class="row">
+                            <button class="btn" id="btn" onclick="addCars()">Add car</button>
+                        </div>
                     </div>
                 </div>
                 <div id="test-swipe-2" class="col s12">
@@ -94,15 +94,17 @@
                             <tr>
                                 <th>License</th>
                                 <th>Model</th>
-                                <th>Price</th>
+                                <th>Damaged</th>
                             </tr>
                         </thead>
-
-                        <tbody id="carDisplay">
+                        <tbody id="garageCarDisplay">
                         </tbody>
                     </table>
+                    <button class="btn" id="checkout" onclick="checkout()">Checkout</button>
                 </div>
                 <div id="test-swipe-3" class="col s12 green">
+                        <tbody id="checkoutCarDisplay">
+                        </tbody>
                 </div>
             </div>
         </section>

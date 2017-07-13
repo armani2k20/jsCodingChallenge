@@ -8,16 +8,20 @@ let car = {
 };
 
 let garage = [];
+let fixedCars = [];
 
 function addCars(){
-    car.license = document.getElementById('license').value;
-    car.model = document.getElementById('model').value;
-    car.damaged = document.getElementById('disabled').value;
+    car.license = document.getElementById('license');
+    car.model = document.getElementById('model');
+    car.damaged = document.getElementById('disabled');
+
+    car.license.innerHTML = "";
+    car.model.innerHTML = "";
 
     garage.push(car.license, car.model);
     addToTable(car);
 }
 
 function addToTable(car){
-    document.getElementById('carDisplay').innerHTML += "<tr><td>"+car.license+"</td><td>"+car.model+"</td><td>"+car.damaged+"</td></tr>";
+    document.getElementById('garageCarDisplay').innerHTML += "<tr><td id ='clicense'>"+car.license.value+"</td><td id ='cmodel'>"+car.model.value+"</td><td id ='cdamaged'>"+car.damaged.value+"</td></tr>";
 }
